@@ -13,8 +13,7 @@ class Food {
     private $name;
     private $price;
 
-    public function show_price (int $price) {
-        $this->price = $price;
+    public function show_price () {
         echo $this->price . '<br>';
     }
 
@@ -29,8 +28,7 @@ class Animal {
     private $height;
     private $weight;
 
-    public function show_height (string $height) {
-        $this->height = $height;
+    public function show_height () {
         echo $this->height . '<br>';
     }
 
@@ -47,8 +45,8 @@ print_r($Food);
 echo '<br>';
 print_r($Animal);
 echo '<br>';
-echo $Food->show_price(250);
-echo $Animal->show_height(60)
+echo $Food->show_price();
+echo $Animal->show_height()
 
 ?>
 </p>
